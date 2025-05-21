@@ -6,7 +6,7 @@ const Card = () => {
   const [post, setPost] = useState([]);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts?_limit=6")
+    fetch("https://jsonplaceholder.typicode.com/posts")
       .then((respon) => respon.json())
       .then((data) => setPost(data))
   }, []);
